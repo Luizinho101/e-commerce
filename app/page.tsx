@@ -1,4 +1,6 @@
 
+import Header from "@/components/Header/header";
+import Button from "@/components/Button/button";
 import Image from "next/image";
 
 
@@ -27,7 +29,7 @@ export default async function Home() {
   const products = await gerProducts();
   return (
 <form>
-
+<Header />
  <div className="p-4 sm:p-6 lg:p-8 bg-gray-50">
 
   <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
@@ -61,7 +63,7 @@ export default async function Home() {
           <h3 className="text-xl font-bold text-indigo-600 mt-auto">
             ${produtos.price.toFixed(2)}
           </h3>
-         
+          <Button />
         </div>
       </div>
     )}
