@@ -1,10 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ Shopixx - Catálogo de Produtos E-commerce
 
-## Getting Started
+Este é um projeto de demonstração de e-commerce construído com Next.js (v16.0.5) e TypeScript, focado na exibição de um catálogo de produtos.
 
-First, run the development server:
+## 🚀 Tecnologias e Dependências
+
+O projeto utiliza as seguintes tecnologias principais, conforme o `package.json`:
+
+* **Framework:** Next.js **(v16.0.5)**
+* **Linguagem:** TypeScript
+* **Estilização:** Tailwind CSS (juntamente com PostCSS)
+* **API de Dados:** Fake Store API (para buscar os produtos)
+* **Bibliotecas de UI:** React **(v19.2.0)** e React DOM **(v19.2.0)**
+
+## ✨ Funcionalidades Principais
+
+* **Listagem de Produtos:** Busca e exibe uma grade de produtos utilizando a **Fake Store API** (`https://fakestoreapi.com/products`).
+* **Design Responsivo:** A grade de produtos se adapta automaticamente ao tamanho da tela (2, 3 ou 4 colunas) graças ao Tailwind CSS.
+* **Componentes:** Implementação de um `Header` e um `Button` (Adicionar ao Carrinho) reutilizáveis.
+* **Tipagem Forte:** Uso de interfaces TypeScript (`Product`) para garantir a estrutura dos dados.
+
+
+---
+
+## ⚙️ Instalação e Execução
+
+### 1. Clonar o Repositório
 
 ```bash
+git clone <URL_DO_SEU_REPOSITORIO>
+cd e-commerce
+2. Instalar as Dependências
+Bash
+
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+# ou
+bun install
+3. Executar o Servidor de Desenvolvimento
+Inicie o servidor de desenvolvimento:
+
+Bash
+
 npm run dev
 # or
 yarn dev
@@ -12,25 +51,7 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
+Abra http://localhost:3000 com seu navegador para ver o resultado.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Você pode começar a editar a página modificando app/page.tsx. A página será atualizada automaticamente conforme você edita o arquivo.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
